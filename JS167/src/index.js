@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import App from './components/app/App';
+import MarvelService from './services/MarvelService';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './style/style.scss';
+
 
 ReactDOM.render(
-    <App/>,
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
   document.getElementById('root')
 );
-
 
